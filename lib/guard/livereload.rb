@@ -18,6 +18,7 @@ module Guard
         port:           '35729',
         apply_css_live: true,
         override_url:   false,
+        silence:   false,
         grace_period:   0,
         js_template: js_path
       }.merge(options)

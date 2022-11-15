@@ -17,7 +17,7 @@ module Guard
       end
 
       def reload_browser(paths = [])
-        msg = "Reloading browser: #{paths.join(' ')}"
+        msg = "Reloading browser: #{paths.join(' ')}" unless options[:silence]
         Compat::UI.info msg
         if options[:notify]
           Compat::UI.notify(msg, title: 'Reloading browser', image: :success)
